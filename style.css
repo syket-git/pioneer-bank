@@ -26,3 +26,15 @@ body{
     overflow: hidden;
     overflow-x: scroll;
 }
+
+@media all and (max-width: 768px){
+    .deposit-container, .withdraw-container, .balance-container{
+        margin-bottom: 20px;
+    }
+    .deposit-input-container{
+        margin-bottom: 40px;
+    }
+    .withdraw-input-container{
+        margin-bottom: 100px;
+    }
+}
