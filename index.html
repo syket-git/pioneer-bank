@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pioneer Bank</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="deposit-container">
+            <div class="name">
+              <h3>Deposit</h3>
+              <h3 id="amount">$<span id="deposit">0</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw-container">
+            <div class="name">
+              <h3>Withdraw</h3>
+              <div id="amount">
+                <h3>$<span id="withdraw">0</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance-container">
+            <div class="name">
+              <h3>Balance</h3>
+              <h3 id="amount">$<span id="balance">2100</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="deposit-input-container">
+            <h3 class="name">Deposit</h3>
+            <form onsubmit="deposit(event)">
+              <div class="d-input">
+                <input
+                  id="deposit-input"
+                  required
+                  class="form-control"
+                  type="number"
+                  placeholder="$ amount you want to deposit"
+                />
+              </div>
+              <div class="button">
+                <input type="submit" value="Deposit" class="btn btn-success" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="withdraw-input-container">
+            <h3 class="name">Withdraw</h3>
+            <form onsubmit="withdraw(event)">
+              <div class="w-input">
+                <input
+                  id="withdraw-input"
+                  required
+                  class="form-control"
+                  type="number"
+                  placeholder="$ amount you want to withdraw"
+                />
+              </div>
+              <div class="button">
+                <input type="submit" value="Withdraw" class="btn btn-success" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

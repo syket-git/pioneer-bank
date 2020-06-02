@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.deposit-container{
+    background:#00c4ff; 
+}
+.withdraw-container{
+    background:#00fffb; 
+}
+.balance-container{
+    background:#00ffb4; 
+}
+.deposit-container, .withdraw-container, .balance-container{
+    padding: 20px;
+    border-radius: 20px;
+}
+.deposit-input-container, .withdraw-input-container{
+    padding: 30px;
+    box-shadow: 0px 0px 20px lightgray;
+    border-radius: 10px;
+}
+.button{
+    margin-top: 15px;
+}
+.amount{
+    overflow: hidden;
+    overflow-x: scroll;
+}
